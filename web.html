@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+		<title>Impressions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link rel="shortcut icon" href="favicon.ico">-->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/nav_demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/nav_component.css" />
+	<link rel="stylesheet" type="text/css" href="css/sponsors.css" />
+	<link rel="stylesheet" href="christmas-lights/css/style.css">
+        <link rel="shortcut icon" href="ico/favicon.png">
+	<script src="js/nav_modernizr-custom.js"></script>
+	<script src="js/events_all.js"></script>
+
+	<!--Events dependencies-->
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<!--<link rel="stylesheet" type="text/css" href="css/events_demo.css" />-->
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/events_component.css" />
+	<script src="js/events_modernizr.custom.js"></script>
+
+	<!--/-->
+	<!--Gallery dependencies-->
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/gallery_demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/gallery_component.css" />
+		<script src="js/gallery_modernizr.custom.js"></script>
+	<!--/-->
+	<!--module dependencies-->
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/index.js"></script>
+
+		<link rel="stylesheet" href="landing_page_css/example.css">
+        <style type="text/css">
+            .landing {
+                background: #222;
+            }
+        </style>
+
+</head>
+<style type="text/css">
+.rotatedDiv {
+    margin-top: 200px;
+    margin-left: 200px;
+    -webkit-transition: -webkit-transform 0s ease-in;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+}
+</style>
+<style>
+	#canvas3{
+	  width: 100vw;
+	  height: 100vh;
+	  position: fixed;
+	}
+	html,body{
+	  margin: 0;
+	  padding: 0;
+	}
+</style>
+<style>
+	#canvas2{
+	  width: 100%;
+	  height: 100%;
+	}
+	html,body{
+	  margin: 0;
+	  padding: 0;
+	}
+</style>
+<style>
+	.impressions-preloader {
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		background: url('image_pageloader_foot.gif') center no-repeat #FFF;
+		z-index: 99999;
+		position: fixed;
+	}
+	@media only screen and (max-width: 370px){
+		.impressions-preloader {
+			background: url('image_pageloader_foot1.gif') center no-repeat #FFF;
+		}
+		.aboutus_med {
+			font-size: medium;
+		}
+	}
+	@media only screen and (max-height: 370px){
+		.impressions-preloader {
+			background: url('image_pageloader_foot1.gif') center no-repeat #FFF;
+		}
+		.aboutus_med {
+			font-size: medium;
+		}
+	}
+	
+		
+</style>
+<body>
+	<!-- navigation -->
+	<div class="impressions-preloader"></div>
+	<nav class="pages-nav">
+		<!--<div class="pages-nav__item"><a class="link link--page" href="#page-home">Home</a></div>-->
+		<div class="pages-nav__item"><a class="link link--page" href="#page-docu">About Us</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-manuals">Events</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-software">Sponsors</a></div>
+		<!--<div class="pages-nav__item"><a class="link link--page" href="#page-custom">Highlights</a></div>-->
+		<div class="pages-nav__item"><a class="link link--page" href="#page-training">Gallery</a></div>
+		<!--<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-buy">Schedule</a></div>-->
+		<!--<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-blog">Blog &amp; News</a></div>-->
+		<div class="pages-nav__item"><a class="link link--page" href="#page-contact">Contact</a></div>
+		<div class="pages-nav__item pages-nav__item--social">
+			<a class="link link--social link--faded" href="https://www.facebook.com/impressionsCOEP/?ref=br_rs" target="_blank"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+			<a class="link link--social link--faded" href="https://www.youtube.com/channel/UC2pSNyxi4qbfR--vfQE_jCg" target="_blank"><i class="fa fa-youtube-play"></i><span class="text-hidden">Youtube</span></a>
+		</div>
+	</nav>
+	<!-- /navigation-->
+	<style>
+		#canvas1{
+		width: 100vw; height: 100vh; position: relative;
+	}
+	</style>
+<style>
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@font-face { font-family: lovelo; src: url('lovelo_bold.otf'); }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #411232;
+}
+
+#test:hover .overlay {
+  opacity: 0.75;
+}
+
+.text {
+  color: white;
+  font-size: x-large;
+  font-family:lovelo, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 670px){
+
+#test .text {
+	color: white;
+  font-size: 15px;
+  font-family:lovelo, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+}
+@media only screen and (max-width: 400px){
+
+#test .text {
+	color: white;
+  font-size: 8px;
+  font-family:lovelo, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+}
+/*.image_rot {
+    position: absolute;
+   
+    -webkit-animation:spin 15s linear infinite;
+    -moz-animation:spin 15s linear infinite;
+    animation:spin 15s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+*/
+@media only screen and (max-width: 370px){
+.scroll{
+       overflow: visible;
+}
+}
+	
+</style>
+<!-- Media queries -->
+<style>
+	.images	{
+	max-height: 90vh;
+	top: 50%;
+	left: 50%;
+	display: block;
+	transform: translate(-50%, -50%);
+	}
+	.images_2	{
+	top: 50%;
+	left: 50%;
+	display: block;
+	transform: translate(-50%, -50%);
+	}
+	@media only screen and (max-width: 370px){
+		.images {
+			max-height: 70vh;
+		}
+	}
+</style>
+	<!-- pages stack -->
+	<div class="pages-stack">
+				<div class="page" id="page-manuals" style="overflow: hidden"> 
+				<div class="container" style="overflow: hidden">
+				<div>
+
+					<canvas style="position: fixed;" id="canvas2"></canvas>
+					<div id="container"></div>
+					<script src="landing_page_js/sketch.js"></script>
+				</div>
+				<div class='selector'>
+				 <ul>
+			    <li>
+				<div id="test">
+			      <input id='1' type='checkbox' onclick="select_module('chitra')">
+			      <label for='1'><a href="events_abhinay.html" target="_blank" ><img src="img/modules/1_abhinay_300px-min.png" alt="" >  <div class="overlay">
+    <div class="text">Dramatics</div>
+  </div>	</a></label>
+				</div>
+			    </li>
+			    <li>
+			      <div id="test">
+			      <input id='3' type='checkbox' onclick="select_module('sangeet')">
+			      <label for='3'><a href="events_nrutya.html" target="_blank"><img src="img/modules/4_nritya_300px-min.png" alt="" height="80px"><div class="overlay"><div class="text">Dance</div> </div></a></label>
+			    	</div>
+			    </li>
+			    <li>
+				<div id="test">
+			      <input id='2' type='checkbox' onclick="select_module('nrutya')">
+			      <label for='2'><a href="events_sangeet.html" target="_blank"><img src="img/modules/3_sangeet_300px-min.png" alt="" height="80px"><div class="overlay"><div class="text">Music</div> </div></a></label>
+			     </div>
+				</li>
+				<li>
+				<div id="test">
+			      <input id='4' type='checkbox' onclick="select_module('abhinay')">
+			      <label for='4'><a href="events_chitra.html" target="_blank"><img src="img/modules/2_chitra_300px-min.png" alt=""><div class="overlay">
+    <div class="text">Crafts</div>
+  </div></a></label></div>
+			    </li>
+			    <li>
+			      <div id="test">
+			      <input id='5' type='checkbox' onclick="select_module('camera')">
+			      <label for='5'><a href="events_camera.html" target="_blank"><img src="img/modules/5_camera_300px-min.png" alt="" height="80px"><div class="overlay">
+    <div class="text">Camera</div>
+  </div></a></label></div>
+			    </li>
+				 </ul>
+				    <button><img class="image_rot" src="event_logo.png" alt="" style="position: relative; height: 92%; width: 100%; background:none"/></button>
+				</div>
+			</div>
+  <script src="js/jquery-2.1.4.js"></script>
+
+    <script src="js/index.js"></script>
+
+
+				</div>
+			<!--<img class="poster" src="images/2.jpg" alt="img02" />-->
+
+<script>
+	console.log('heyyyyy')
+        var circles = [],
+            canvas = document.getElementById("canvas2"),
+            context = canvas.getContext("2d"),
+
+            // SETTINGS
+            opacity = 0.8,                                      // the opacity of the circles 0 to 1
+            colors = ['rgba(34, 49, 63,' + opacity + ')',       // an array of rgb colors for the circles
+                    'rgba(189, 195, 199,' + opacity + ')',
+                    'rgba(241, 196, 15,' + opacity + ')',
+                    'rgba(231, 76, 60,' + opacity + ')',
+                    'rgba(231, 76, 60,' + opacity + ')'
+                    ],
+            minSize = 1,                                        // the minimum size of the circles in px
+            maxSize = 2,                                       // the maximum size of the circles in px
+	   
+		circleMultiplier = 300,
+            numCircles = circleMultiplier * ((window.outerWidth)/(1366)),
+	    // the number of circles104
+            minSpeed = -3 ,                                     // the minimum speed, recommended: -maxspeed
+            maxSpeed = 3 ,                                    // the maximum speed of the circles
+            expandState = true;                                      // the direction of expansion
+console.log(canvas)
+        function buildArray() {
+            'use strict';
+            console.log('in sponsors floating dots js')
+	    console.log(minSpeed)
+            for (var i =0; i < numCircles ; i++){
+                var color = Math.floor(Math.random() * (colors.length - 1 + 1)) + 1,
+                    left = Math.floor(Math.random() * (canvas.width - 0 + 1)) + 0,
+                    top = Math.floor(Math.random() * (canvas.height - 0 + 1)) + 0,
+                    size = Math.floor(Math.random() * (maxSize - minSize + 1)) + minSize,
+                    leftSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10,
+                    topSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10,
+                    expandState = expandState;
+
+                    while(leftSpeed == 0 || topSpeed == 0){
+                        leftSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10,
+                        topSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10;
+                    }
+                var circle = {color:color, left:left, top:top, size:size, leftSpeed:leftSpeed, topSpeed:topSpeed, expandState:expandState };
+                circles.push(circle);
+            }
+        }
+
+        function build(){
+            'use strict';
+	    
+            for(var h = 0; h < circles.length; h++){
+                var curCircle = circles[h];
+                context.fillStyle = colors[curCircle.color-1];
+                context.beginPath();
+                if(curCircle.left > canvas.width+curCircle.size){
+                    curCircle.left = 0-curCircle.size;
+                    context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+                }else if(curCircle.left < 0-curCircle.size){
+                    curCircle.left = canvas.width+curCircle.size;
+                    context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+                }else{
+                    curCircle.left = curCircle.left+curCircle.leftSpeed;
+                    context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+                }
+
+                if(curCircle.top > canvas.height+curCircle.size){
+                    curCircle.top = 0-curCircle.size;
+                    context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+
+                }else if(curCircle.top < 0-curCircle.size){
+                    curCircle.top = canvas.height+curCircle.size;
+                    context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+                }else{
+                    curCircle.top = curCircle.top+curCircle.topSpeed;
+                    if(curCircle.size != maxSize && curCircle.size != minSize && curCircle.expandState == false){
+                    curCircle.size = curCircle.size-0.1;
+                    }
+                    else if(curCircle.size != maxSize && curCircle.size != minSize && curCircle.expandState == true){
+                    curCircle.size = curCircle.size+0.1;
+                    }
+                    else if(curCircle.size == maxSize && curCircle.expandState == true){
+                    curCircle.expandState = false;
+                    curCircle.size = curCircle.size-0.1;
+                    }
+                    else if(curCircle.size == minSize && curCircle.expandState == false){
+                    curCircle.expandState = true;
+                    curCircle.size = curCircle.size+0.1;
+                    }
+                    context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+                }
+
+                context.closePath();
+                context.fill();
+                context.ellipse;
+            }
+        }
+
+
+        var xVal = 0;
+
+        window.requestAnimFrame = (function (callback) {
+            'use strict';
+            return window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            function (callback) {
+                window.setTimeout(callback, 1000/60);
+            };
+        })();
+
+        function animate() {
+            'use strict';
+            var canvas = document.getElementById("canvas2"),
+                context = canvas.getContext("2d");
+
+            // clear the canvas
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+
+            // draw the next frame
+            xVal++;
+            build();
+
+            //console.log("Prep: animate ==> requestAnimFrame");
+            // request a new frame
+            requestAnimFrame(function () {
+                animate();
+            });
+        }
+        window.onload = function () {
+            'use strict';
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+	    
+            buildArray();
+            animate();
+        };
+</script>
+		<!-- page -->
+	<!--<div class="page landing" id="page-home">
+        <div>
+			<img id="image1" style="position: absolute; height:100%; width:100% " src="photo1.png" alt="..." />
+			<canvas style="position: relative" id="canvas1"></canvas>
+			<img id="image2" style="position: absolute; height :100%; width:100%; top: 6px; left: 7px;" src="photo2.png" alt="..." />
+			<img id="image3" style="position: absolute; height :100%; width:80%; top: -10px; left: 130px;" src="one plus.png" alt="..." />
+        </div>
+        <div id="container"></div>
+		<script src="landing_page_js/sketch.js"></script>
+		<button id="component-2" class="button button--2" style="filter: url('#filter-goo-2'); position: fixed; bottom: 100px; left: 20px;">
+			<a href='morefiles/register2.php' style="color: white;">REGISTER</a>
+			<span class="button__bg"></span>
+		</button>
+    </div>-->
+	<!--<script src="landing_page_js/sketch.js"></script>-->
+	<!--<style>
+		#canvas1{
+		width: 100vw; height: 100vh; position: relative;
+	}
+	</style>
+
+
+<script>
+	console.log('homeeee')
+    var circles = [],
+        canvas = document.getElementById("canvas1"),
+        context = canvas.getContext("2d"),
+
+        // SETTINGS
+        opacity = 0.6,                                      // the opacity of the circles 0 to 1
+        colors = ['rgba(34, 49, 63,' + opacity + ')',       // an array of rgb colors for the circles
+                'rgba(189, 195, 199,' + opacity + ')',
+                'rgba(241, 196, 15,' + opacity + ')',
+                'rgba(231, 76, 60,' + opacity + ')',
+                'rgba(231, 76, 60,' + opacity + ')'
+                ],
+        minSize = 1,                                        // the minimum size of the circles in px
+        maxSize = 2,                                       // the maximum size of the circles in px
+        numCircles = 300,                                   // the number of circles
+        minSpeed = -7,                                     // the minimum speed, recommended: -maxspeed
+        maxSpeed = 7,                                    // the maximum speed of the circles
+        expandState = true;                                      // the direction of expansion
+		console.log(canvas)
+    function buildArray() {
+        'use strict';
+        console.log('in home page floating dots js')
+        for (var i =0; i < numCircles ; i++){
+            var color = Math.floor(Math.random() * (colors.length - 1 + 1)) + 1,
+                left = Math.floor(Math.random() * (canvas.width - 0 + 1)) + 0,
+                top = Math.floor(Math.random() * (canvas.height - 0 + 1)) + 0,
+                size = Math.floor(Math.random() * (maxSize - minSize + 1)) + minSize,
+                leftSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10,
+                topSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10,
+                expandState = expandState;
+
+                while(leftSpeed == 0 || topSpeed == 0){
+                    leftSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10,
+                    topSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10;
+                }
+            var circle = {color:color, left:left, top:top, size:size, leftSpeed:leftSpeed, topSpeed:topSpeed, expandState:expandState };
+            circles.push(circle);
+        }
+    }
+
+    function build(){
+        'use strict';
+
+        for(var h = 0; h < circles.length; h++){
+            var curCircle = circles[h];
+            context.fillStyle = colors[curCircle.color-1];
+            context.beginPath();
+            if(curCircle.left > canvas.width+curCircle.size){
+                curCircle.left = 0-curCircle.size;
+                context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+            }else if(curCircle.left < 0-curCircle.size){
+                curCircle.left = canvas.width+curCircle.size;
+                context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+            }else{
+                curCircle.left = curCircle.left+curCircle.leftSpeed;
+                context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+            }
+
+            if(curCircle.top > canvas.height+curCircle.size){
+                curCircle.top = 0-curCircle.size;
+                context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+
+            }else if(curCircle.top < 0-curCircle.size){
+                curCircle.top = canvas.height+curCircle.size;
+                context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+            }else{
+                curCircle.top = curCircle.top+curCircle.topSpeed;
+                if(curCircle.size != maxSize && curCircle.size != minSize && curCircle.expandState == false){
+                curCircle.size = curCircle.size-0.1;
+                }
+                else if(curCircle.size != maxSize && curCircle.size != minSize && curCircle.expandState == true){
+                curCircle.size = curCircle.size+0.1;
+                }
+                else if(curCircle.size == maxSize && curCircle.expandState == true){
+                curCircle.expandState = false;
+                curCircle.size = curCircle.size-0.1;
+                }
+                else if(curCircle.size == minSize && curCircle.expandState == false){
+                curCircle.expandState = true;
+                curCircle.size = curCircle.size+0.1;
+                }
+                context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+            }
+
+            context.closePath();
+            context.fill();
+            context.ellipse;
+        }
+    }
+
+
+    var xVal = 0;
+
+    window.requestAnimFrame = (function (callback) {
+        'use strict';
+        return window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function (callback) {
+            window.setTimeout(callback, 1000/60);
+        };
+    })();
+
+    function animate() {
+        'use strict';
+        var canvas = document.getElementById("canvas1"),
+            context = canvas.getContext("2d");
+
+        // clear the canvas
+        context.clearRect(0, 0, canvas.width, canvas.height);
+
+
+        // draw the next frame
+        xVal++;
+        build();
+
+        //console.log("Prep: animate ==> requestAnimFrame");
+        // request a new frame
+        requestAnimFrame(function () {
+            animate();
+        });
+    }
+    window.onload = function () {
+        'use strict';
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        buildArray();
+        animate();
+    };
+
+
+
+</script>
+
+ <script>
+
+        // ----------------------------------------
+        // Particle
+        // ----------------------------------------
+
+        function Particle( x, y, radius ) {
+            this.init( x, y, radius );
+        }
+
+        Particle.prototype = {
+
+            init: function( x, y, radius ) {
+                this.radius = radius || 10;
+                this.wander = 0.15;
+                this.theta = random( TWO_PI );
+                this.drag = 0.92;
+                this.color = '#fff';
+
+                this.x = x || 0.0;
+                this.y = y || 0.0;
+
+                this.vx = 0.0;
+                this.vy = 0.0;
+			    this.alive = true;
+            },
+
+            move: function() {
+
+                this.x += this.vx;
+                this.y += this.vy;
+
+                this.vx *= this.drag/1.25;
+                this.vy *= this.drag/1.25;
+
+                this.theta += random( -0.5, 0.5 ) * this.wander;
+                this.vx += sin( this.theta ) * 0.1;
+                this.vy += cos( this.theta ) * 0.1;
+
+                this.radius *= 0.95;
+				if(this.radius < 0.1)
+					this.alive = false;
+            },
+
+            draw: function( ctx ) {
+
+                ctx.beginPath();
+                ctx.arc( this.x, this.y, this.radius, 0, TWO_PI );
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+        };
+
+        // ----------------------------------------
+        // Example
+        // ----------------------------------------
+
+        var MAX_PARTICLES = 560;
+						// RED x 4, PINK, PURPLE, CYAN , DARKBLUE , MED-BLUE, BLACK, GREEN-BLUE , dark blue
+        var COLOURS = [ '#F61B4F' , '#FC001D', '#FD001A' , '#FC0034 ', '#FC0079' , '#9D00BB' , '#2BF5F8' , '#010104' , '#04D2BE' , '#1215C0' ];
+
+        var particles = [];
+        var pool = [];
+
+        var demo = Sketch.create({
+            container: document.getElementById( 'container' )
+        });
+
+        demo.setup = function() {
+
+            // Set off some initial particles.
+            var i, x, y;
+
+            for ( i = 0; i < 20; i++ ) {
+                x = ( demo.width * 0.5 ) + random( -100, 100 );
+                y = ( demo.height * 0.5 ) + random( -100, 100 );
+                demo.spawn( x, y );
+            }
+        };
+
+        demo.spawn = function( x, y ) {
+
+            var particle, theta, force;
+
+            if ( particles.length >= MAX_PARTICLES )
+                pool.push( particles.shift() );
+
+            particle = pool.length ? pool.pop() : new Particle();
+            particle.init( x, y, 3 );
+
+            particle.wander = random( 0.5, 2.0 );
+            particle.color = random( COLOURS );
+            particle.drag = random( 0.9, 0.99 );
+
+            theta = random( TWO_PI );
+            force = random( 2, 8 );
+
+            particle.vx = sin( theta ) * force;
+            particle.vy = cos( theta ) * force;
+
+            particles.push( particle );
+        };
+
+        demo.update = function() {
+
+            var i, particle;
+
+            for ( i = particles.length - 1; i >= 0; i-- ) {
+
+                particle = particles[i];
+
+                if ( particle.alive ) particle.move();
+                else pool.push( particles.splice( i, 1 )[0] );
+            }
+        };
+
+        demo.draw = function() {
+
+            demo.globalCompositeOperation  = 'lighter';
+
+            for ( var i = particles.length - 1; i >= 0; i-- ) {
+                particles[i].draw( demo );
+            }
+        };
+
+        demo.mousemove = function() {
+
+            var touch, max, i, j, n;
+
+            for ( i = 0, n = demo.touches.length; i < n; i++ ) {
+
+                touch = demo.touches[i], max = random( 1, 4 );
+                for ( j = 0; j < max; j++ ) {
+                  demo.spawn( random(touch.x + 45, touch.x - 45), random(touch.y + 45 , touch.y - 45) );
+                }
+
+            }
+        };
+
+</script>-->
+
+
+		<!-- /page -->
+		<div class="page" id="page-docu">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">About Us</h1>
+				<!--<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>-->
+				<p class="info"></p>
+			</header>
+			<div class="container" style="padding: 5% 10% 10% 10%; margin: auto; text-align:center;">
+			<!--<div style="padding: 2%; margin: auto; text-align:center; width: 65%; line-height: 40px;">-->
+				<h3 class="aboutus_med">
+			IMPRESSIONS - the annual cultural fest of College of Engineering, Pune, is taking  baby steps and stepping into it's second edition this year. After a great success of the first edition that attracted a whooping number of almost 10,000 people from across the country, WE are back! Promising even more this year. Boxed with several intriguing and stupefying events, the hard working Cultural Club of CoEP, has brought to you five exciting modules - Arts and Crafts, Dance, Music, Drama and Camera. Impressions aims to provide everyone with the most memorable time of their lives, simultaneously providing them with a platform so varied that they have a thousand ways to express their art. We hope to make this landmark initiative the melting pot of Cultural activities for colleges in times to come.
+We like to welcome you as a part of Impressions '17 taking place on 9th, 10th and 11th December 2017 at College of Engineering, Pune.
+Come and celebrate the glory of art with us!</h3>
+<br><br><br><br><br><br><br>
+
+<div style="bottom:5">
+	<a href="https://www.facebook.com/sdscoep/"  target="_blank"><h4> Website Designed by Software Development Section, COEP </h4></a>
+</div>
+	<br><br><br><br><br><br><br><br><br><br>
+			</div>
+
+		</div>
+
+		<!--page Sponsors-->
+		<div class="page" id="page-software">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title" style="font-family: lovelo; src: url('lovelo_bold.otf');"	>Sponsors</h1>
+				<!--<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>-->
+				<p class="info"></p>
+			</header>
+			<div>
+				<p><h2 class="aboutus_med"> Title Sponsor </h2></p>
+				<a href="https://oneplusstore.in/" target="_blank"><img  src="img/sponsors/oneps.png" alt="..." style="height:100px; width:200px;"/></a> <br><br><br><br><br><br>
+			</div>
+		</div>
+<!--<script>
+	console.log('heyyyyy')
+        var circles = [],
+            canvas = document.getElementById("canvas2"),
+            context = canvas.getContext("2d"),
+
+            // SETTINGS
+            opacity = 0.6,                                      // the opacity of the circles 0 to 1
+            colors = ['rgba(34, 49, 63,' + opacity + ')',       // an array of rgb colors for the circles
+                    'rgba(189, 195, 199,' + opacity + ')',
+                    'rgba(241, 196, 15,' + opacity + ')',
+                    'rgba(231, 76, 60,' + opacity + ')',
+                    'rgba(231, 76, 60,' + opacity + ')'
+                    ],
+            minSize = 1,                                        // the minimum size of the circles in px
+            maxSize = 2,                                       // the maximum size of the circles in px
+            numCircles = 300,                                   // the number of circles
+            minSpeed = -7,                                     // the minimum speed, recommended: -maxspeed
+            maxSpeed = 7,                                    // the maximum speed of the circles
+            expandState = true;                                      // the direction of expansion
+		console.log(canvas)
+        function buildArray() {
+            'use strict';
+            console.log('in sponsors floating dots js')
+            for (var i =0; i < numCircles ; i++){
+                var color = Math.floor(Math.random() * (colors.length - 1 + 1)) + 1,
+                    left = Math.floor(Math.random() * (canvas.width - 0 + 1)) + 0,
+                    top = Math.floor(Math.random() * (canvas.height - 0 + 1)) + 0,
+                    size = Math.floor(Math.random() * (maxSize - minSize + 1)) + minSize,
+                    leftSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10,
+                    topSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10,
+                    expandState = expandState;
+
+                    while(leftSpeed == 0 || topSpeed == 0){
+                        leftSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10,
+                        topSpeed = (Math.floor(Math.random() * (maxSpeed - minSpeed + 1)) + minSpeed)/10;
+                    }
+                var circle = {color:color, left:left, top:top, size:size, leftSpeed:leftSpeed, topSpeed:topSpeed, expandState:expandState };
+                circles.push(circle);
+            }
+        }
+
+        function build(){
+            'use strict';
+
+            for(var h = 0; h < circles.length; h++){
+                var curCircle = circles[h];
+                context.fillStyle = colors[curCircle.color-1];
+                context.beginPath();
+                if(curCircle.left > canvas.width+curCircle.size){
+                    curCircle.left = 0-curCircle.size;
+                    context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+                }else if(curCircle.left < 0-curCircle.size){
+                    curCircle.left = canvas.width+curCircle.size;
+                    context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+                }else{
+                    curCircle.left = curCircle.left+curCircle.leftSpeed;
+                    context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+                }
+
+                if(curCircle.top > canvas.height+curCircle.size){
+                    curCircle.top = 0-curCircle.size;
+                    context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+
+                }else if(curCircle.top < 0-curCircle.size){
+                    curCircle.top = canvas.height+curCircle.size;
+                    context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+                }else{
+                    curCircle.top = curCircle.top+curCircle.topSpeed;
+                    if(curCircle.size != maxSize && curCircle.size != minSize && curCircle.expandState == false){
+                    curCircle.size = curCircle.size-0.1;
+                    }
+                    else if(curCircle.size != maxSize && curCircle.size != minSize && curCircle.expandState == true){
+                    curCircle.size = curCircle.size+0.1;
+                    }
+                    else if(curCircle.size == maxSize && curCircle.expandState == true){
+                    curCircle.expandState = false;
+                    curCircle.size = curCircle.size-0.1;
+                    }
+                    else if(curCircle.size == minSize && curCircle.expandState == false){
+                    curCircle.expandState = true;
+                    curCircle.size = curCircle.size+0.1;
+                    }
+                    context.arc(curCircle.left, curCircle.top, curCircle.size, 0, 2 * Math.PI, false);
+                }
+
+                context.closePath();
+                context.fill();
+                context.ellipse;
+            }
+        }
+
+
+        var xVal = 0;
+
+        window.requestAnimFrame = (function (callback) {
+            'use strict';
+            return window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            function (callback) {
+                window.setTimeout(callback, 1000/60);
+            };
+        })();
+
+        function animate() {
+            'use strict';
+            var canvas = document.getElementById("canvas2"),
+                context = canvas.getContext("2d");
+
+            // clear the canvas
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+
+            // draw the next frame
+            xVal++;
+            build();
+
+            //console.log("Prep: animate ==> requestAnimFrame");
+            // request a new frame
+            requestAnimFrame(function () {
+                animate();
+            });
+        }
+        window.onload = function () {
+            'use strict';
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            buildArray();
+            animate();
+        };
+</script>-->
+		<!--/page Sponsors-->
+
+		<!--<div class="page" id="page-custom">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Highlights</h1>
+				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+				<p class="info">
+					"You have to make a conscious decision to change for your own well-being, that of your family and your country." &mdash;Bill Clinton
+				</p>
+			</header>
+			<img class="poster" src="images/4.jpg" alt="img04" />
+		</div>-->
+		<div class="page" id="page-training">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Gallery</h1>
+				<p class="bp-header__desc">   </p>
+			</header>
+			<div class="container">
+				<!--<header class="clearfix">
+					<span>Blueprint <span class="bp-icon bp-icon-about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+					<h1>Google Grid Gallery</h1>
+					<nav>
+						<a href="http://tympanus.net/Blueprints/FullWidthTabs/" class="bp-icon bp-icon-prev" data-info="previous Blueprint"><span>Previous Blueprint</span></a>-->
+						<!--a href="" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+						<!--<a href="http://tympanus.net/codrops/?p=18699" class="bp-icon bp-icon-drop" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+						<a href="http://tympanus.net/codrops/category/blueprints/" class="bp-icon bp-icon-archive" data-info="Blueprints archive"><span>Go to the archive</span></a>
+					</nav>
+				</header>-->
+				<div id="grid-gallery" class="grid-gallery">
+					<section class="grid-wrap">
+						<ul class="grid">
+							<li class="grid-sizer"></li><!-- for Masonry column width --><li>
+								<figure>
+									<img src="images/img1.jpeg" alt="img01"/>
+									<!--<figcaption><h3>Letterpress asymmetrical</h3><p>Chillwave hoodie ea gentrify aute sriracha consequat.</p></figcaption>-->
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img2.jpeg" alt="img02"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img3.jpeg" alt="img03"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img4.jpeg" alt="img04"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img5.jpeg" alt="img05"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img6.jpeg" alt="img05"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img7.jpeg" alt="img04"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img8.jpeg" alt="img01"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img9.jpeg" alt="img01"/>
+								<!--<figcaption><h3>Letterpress asymmetrical</h3><p>Chillwave hoodie ea gentrify aute sriracha consequat.</p></figcaption>-->
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img10.jpeg" alt="img02"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img11.jpeg" alt="img03"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img12.jpeg" alt="img04"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img13.jpeg" alt="img06"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img14.jpeg" alt="img01"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img15.jpeg" alt="img02"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img16.jpeg" alt="img03"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img17.jpeg" alt="img05"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img18.jpeg" alt="img06"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img20.jpeg" alt="img02"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img21.jpeg" alt="img03"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img22.jpeg" alt="img04"/>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="images/img23.jpeg" alt="img05"/>
+								</figure>
+							</li>
+						</ul>
+					</section><!-- // grid-wrap -->
+					<section class="slideshow" >
+						<ul>
+							<li>
+								<figure>
+									<img class="images" src="images/img1.jpeg" alt="img01"/  " style="position:absolute; width: auto;">
+									<!--<figcaption><h3>Letterpress asymmetrical</h3><p>Chillwave hoodie ea gentrify aute sriracha consequat.</p></figcaption>-->
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images" src="images/img2.jpeg" alt="img02" style="position:absolute; width: auto;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images" src="images/img3.jpeg" alt="img03" style="position:absolute; width: auto;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img4.jpeg" alt="img04" style="position:absolute; width: 100%;" >
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img5.jpeg" alt="img05" style="position:absolute; width: 100%;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img6.jpeg" alt="img05" style="position:absolute; width: 100%;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images" src="images/img7.jpeg" alt="img04" style="position:absolute; width: auto;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images" src="images/img8.jpeg" alt="img01" style="position:absolute; width: auto;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img9.jpeg" alt="img01" style="position:absolute; width: 100%;">
+								<!--<figcaption><h3>Letterpress asymmetrical</h3><p>Chillwave hoodie ea gentrify aute sriracha consequat.</p></figcaption>-->
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img10.jpeg" alt="img02" style="position:absolute; width: 100%;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img11.jpeg" alt="img03" style="position:absolute; width: 100%;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img12.jpeg" alt="img04" style="position:absolute; width: 100%;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img13.jpeg" alt="img06" style="position:absolute; width: 100%;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img14.jpeg" alt="img01" style="position:absolute; width: 100%;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img15.jpeg" alt="img02" style="position:absolute; width: 100%;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img16.jpeg" alt="img03" style="position:absolute; width: 100%;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img17.jpeg" alt="img05" style="position:absolute; width: 100%;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img18.jpeg" alt="img06" style="position:absolute; width: 100%;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img20.jpeg" alt="img02" style="position:absolute; width: 100%;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img21.jpeg" alt="img03" style="position:absolute; width: 100%;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img22.jpeg" alt="img04" style="position:absolute; width: 100%;">
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img class="images_2" src="images/img23.jpeg" alt="img05" style=position:absolute; width: 100%;">
+								</figure>
+							</li>
+						</ul>
+						<nav>
+							<span class="icon nav-prev"></span>
+							<span class="icon nav-next"></span>
+							<span class="icon nav-close"></span>
+						</nav>
+					</section><!-- // slideshow -->
+				</div><!-- // grid-gallery -->
+				<br><br><br><br><br><br><br>
+			</div>
+
+		</div>
+		<!--<div class="page" id="page-buy">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Schedule</h1>
+				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+				<p class="info">
+					"When people ask me why I don't eat meat or any other animal products, I say, 'Because they are unhealthy and they are the product of a violent and inhumane industry.'" &mdash;
+				</p>
+			</header>
+			<img class="poster" src="images/6.jpg" alt="img06" />
+		</div>
+		<div class="page" id="page-blog">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Blog &amp; News</h1>
+				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+				<p class="info">
+					"The question is not, 'Can they reason?' nor, 'Can they talk?' but rather, 'Can they suffer?" &mdash; Jeremy Bentham
+				</p>
+			</header>
+			<img class="poster" src="images/1.jpg" alt="img01" />
+		</div>-->
+		<div class="page" id="page-contact">
+				<header class="bp-header cf">
+					<h1 class="bp-header__title">Contact Us</h1>
+					<!--<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>-->
+					<p class="info"></p>
+				</header>
+				<div class="container" style="text-align:center;">
+					<div style="margin: auto; text-align:center; width: 75%; height: 100%;">
+						<a href="tel:+91 9607051387"><h3 style="color:white">You can Contact us at 9607051387</h3></a>
+						<iframe width=100% height=300px top=50% left=50% frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJc7hYOIjAwjsRGVXHyvL7aB0&key=AIzaSyAUiLG0KQdOTlvuxyvQSEenXou14jJBVuI" allowfullscreen></iframe>
+						<h4> Mail us at helpdesk.impressions@gmail.com</h4><br><br><br><br><br><br><br><br>
+					</div>
+				</div>
+			</div>
+	</div>
+	<!-- /pages-stack -->
+	<button class="menu-button"><span>Menu</span></button>
+	<script src="js/nav_classie.js"></script>
+	<script src="js/nav_main.js"></script>
+	<!--events dependencies-->
+	<script src="js/events_classie.js"></script>
+	<script src="js/events_dynamics.min.js"></script>
+	<script src="js/events_main.js"></script>
+	<!--gallery dependencies-->
+	<script src="js/gallery_imagesloaded.pkgd.min.js"></script>
+	<script src="js/gallery_masonry.pkgd.min.js"></script>
+	<script src="js/gallery_classie.js"></script>
+	<script src="js/gallery_cbpGridGallery.js"></script>
+	<script>
+		new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+	</script>
+<script>
+    jQuery(window).load(function(){
+        jQuery(".impressions-preloader").fadeOut(1200);
+    });
+</script>
+<noscript>
+    <style>.impressions-preloader { display: none; } </style>
+</noscript>
+
+</body>
