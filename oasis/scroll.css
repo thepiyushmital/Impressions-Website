@@ -1,0 +1,140 @@
+
+
+.slider{
+	position: relative;
+	left: 0;
+	overflow-x:hidden;
+}
+.bar{
+	cursor: pointer;
+	min-width: 0px;
+	background-size: cover;
+	transition: all 0.5s cubic-bezier(.18,.89,.32,1.28);
+}
+/*added*/
+.chitra .bar:nth-of-type(1){
+	background: #444 url("../img/events/chitra1_strokesinblinks-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.chitra .bar:nth-of-type(2){
+	background: #777 url("../img/events/chitra2_wrapinscrap-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.chitra .bar:nth-of-type(4){
+	background: #999 url("../img/events/chitra3_doodlydoo-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.chitra .bar:nth-of-type(3){
+	background: #bbb url("../img/events/chitra4_tee2onesold-min.jpg") top center no-repeat;
+	background-position: 65% 0;
+	background-size: cover;
+}
+
+.abhinay .bar:nth-of-type(1){
+	background: #444 url("../img/events/abhinay1_limelight-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.abhinay .bar:nth-of-type(2){
+	background: #777 url("../img/events/abhinay2_artiskit-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.abhinay .bar:nth-of-type(3){
+	background: #999 url("../img/events/abhinay3_kavya-min.jpg") top center no-repeat;
+	background-position: 30% 0;
+	background-size: cover;
+}
+
+.abhinay .bar:nth-of-type(4){
+	background: #bbb url("../img/events/abhinay4_sunosuno-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.sangeet .bar:nth-of-type(1){
+	background: #444 url("../img/events/music3_highcurrent-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.sangeet .bar:nth-of-type(2){
+	background: #777 url("../img/events/music4_savani-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.sangeet .bar:nth-of-type(3){
+	background: #999 url("../img/events/music2_staytuned-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.camera .bar:nth-of-type(1){
+	background: #444 url("../img/events/camera1_boxoffice-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.camera .bar:nth-of-type(2){
+	background: #777 url("../img/events/camera2_freelenser-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.nrutya .bar:nth-of-type(1){
+	background: #444 url("../img/events/dance_rangeela-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.nrutya .bar:nth-of-type(2){
+	background: #777 url("../img/events/dance_soduet-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.nrutya .bar:nth-of-type(3){
+	background: #999 url("../img/events/dance_streetforward-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.bar:nth-of-type(1){
+	background: #444 url("../img/events/chitra_strokesinblinks-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.bar:nth-of-type(2){
+	background: #777 url("../img/events/chitra_doodlydoo-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.bar:nth-of-type(3){
+	background: #999 url("../img/events/music_staytuned-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.bar:nth-of-type(4){
+	background: #bbb url("../img/events/music_savani-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+
+.bar:nth-of-type(5){
+	background: #ddd url("../img/events/music_highcurrent-min.jpg") top center no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+dance_rangeela-min
